@@ -14,12 +14,10 @@ from keras.preprocessing import image
 from flask import Flask, redirect, url_for, request, render_template
 from werkzeug.utils import secure_filename
 from gevent.pywsgi import WSGIServer
-
 app = Flask(__name__)
 
-MODEL_PATH = "C:/Users/avvar/FL Detection/models/fldetection.h5"
+MODEL_PATH = r"C:\Users\Soumyojyoti Saha\OneDrive - vit.ac.in\Documents\fake logo detection vit\vit ml model\Ipynb\models\fldetection.h5"
 model = load_model(MODEL_PATH)
-
 
 print('Model loaded. Check http://127.0.0.1:5000/')
 
@@ -50,7 +48,7 @@ def upload():
 
         # Make prediction
         preds = model_predict(file_path, model)
-        if preds > 0.5:
+        if preds > 0.9:
             result = 'The logo is fake'
         else:
             result = 'The logo is real'
