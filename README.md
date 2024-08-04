@@ -4,6 +4,8 @@ This Fake Logo Detection model helps in detecting the fake and original logos of
 
 # Fake-Logo-Detection-VIT
 
+![Project Image](https://github.com/Soumyojyotisaha/Logo-Forgery-Detection/blob/main/project.jpg)
+
 # Project Overview
 
 The project comprises three main scripts: `checkfakelogo.py`, `fake_logo_gen.py`, and `trainedmodel.py`. These scripts collectively offer functionalities for logo authenticity detection, fake logo generation, and training a machine learning model for logo classification.
